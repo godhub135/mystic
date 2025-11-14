@@ -1,1 +1,26 @@
-พวกหิว
+Obfuscation failed: Obfuscator failed (rc=1): ./lua.exe: ./lua/logger.lua:54: Parsing Error at Position 502:46, unexpected token <Keyword> "end", expected <Symbol> "="
+stack traceback:
+    [C]: in function 'error'
+    ./lua/logger.lua:54: in function 'logger.errorCallback'
+    ./lua/logger.lua:57: in function 'logger.error'
+    ./lua/prometheus\parser.lua:134: in upvalue 'expect'
+    ./lua/prometheus\parser.lua:472: in function 'prometheus.parser.statement'
+    ./lua/prometheus\parser.lua:171: in function 'prometheus.parser.block'
+    ./lua/prometheus\parser.lua:249: in function 'prometheus.parser.statement'
+    ./lua/prometheus\parser.lua:171: in function 'prometheus.parser.block'
+    ./lua/prometheus\parser.lua:380: in function 'prometheus.parser.statement'
+    ./lua/prometheus\parser.lua:171: in function 'prometheus.parser.block'
+    ./lua/prometheus\parser.lua:314: in function 'prometheus.parser.statement'
+    ./lua/prometheus\parser.lua:171: in function 'prometheus.parser.block'
+    ./lua/prometheus\parser.lua:149: in function 'prometheus.parser.parse'
+    ./lua/prometheus\pipeline.lua:178: in function 'prometheus.pipeline.apply'
+    ./lua/cli.lua:132: in main chunk
+    [C]: in ?
+
+[0m[35mPROMETHEUS: [0mApplying Obfuscation Pipeline to C:\Users\ADMINI~1\AppData\Local\Temp\2\tmpsp_rmru2.lua ...
+[0m[35mPROMETHEUS: [0mParsing ...
+[0m[33mPROMETHEUS: Warning at Position 446:14, the variable "Players" is already defined in that scope[0m
+[0m[33mPROMETHEUS: Warning at Position 447:17, the variable "RunService" is already defined in that scope[0m
+[0m[33mPROMETHEUS: Warning at Position 448:24, the variable "ReplicatedStorage" is already defined in that scope[0m
+[0m[33mPROMETHEUS: Warning at Position 450:18, the variable "LocalPlayer" is already defined in that scope[0m
+[0m[31mPROMETHEUS: Parsing Error at Position 502:46, unexpected token <Keyword> "end", expected <Symbol> "="[0m
